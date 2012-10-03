@@ -1,4 +1,5 @@
 // Cell struct represents one cell in the Game Of Life
+// git test comment
 package main
 
 // one cell in the grid
