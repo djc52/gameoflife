@@ -1,0 +1,19 @@
+// Cell struct represents one cell in the Game Of Life
+package main
+
+// one cell in the grid
+type Cell struct {
+	curState  int
+	nextState int
+}
+
+func (cell *Cell) CurState() int { return cell.curState }
+
+
+// function to create new cell with input values
+func NewCell(curState int, nextState int) *Cell {
+	cell := new(Cell)
+	cell.curState = curState
+	cell.nextState = nextState
+	return cell
+}
